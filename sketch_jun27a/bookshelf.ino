@@ -73,8 +73,7 @@ void setup() {
   // set an initial value for the characteristic
   switchChar.setValue(0);
   ledc.setValue(0);
-  dis1.setValue(bonar.ping_cm());
-  dis2.setValue(sonar.ping_cm());
+
   // start advertising
   BLE.advertise();
 
@@ -84,6 +83,8 @@ void setup() {
 void loop() {
   // poll for BLE events
   BLE.poll();
+  dis1.setValue(bonar.ping_cm());
+  dis2.setValue(sonar.ping_cm());
 }
 
 void blePeripheralConnectHandler(BLEDevice central) {
