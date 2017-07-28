@@ -31,9 +31,9 @@ BLEService ledService("94:76:B7:D5:F1:8D"); // create service
 
 // create switch characteristic and allow remote device to read and write
 BLECharCharacteristic switchChar("94:76:B7:D5:F1:8D", BLERead | BLEWrite);
-BLECharCharacteristic ledc("94:76:B7:D5:F1:8D", BLERead | BLEWrite);
-BLECharCharacteristic dis1("94:76:B7:D5:F1:8D", BLERead | BLENotify);
-BLECharCharacteristic dis2("94:76:B7:D5:F1:8D", BLERead | BLENotify);
+BLECharCharacteristic ledc("94:76:B7:D5:F1:8A", BLERead | BLEWrite);
+BLECharCharacteristic dis1("94:76:B7:D5:F1:8B", BLERead | BLENotify);
+BLECharCharacteristic dis2("94:76:B7:D5:F1:8C", BLERead | BLENotify);
 
 
 
